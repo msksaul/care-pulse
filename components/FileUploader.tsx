@@ -17,7 +17,7 @@ const FileUploader = ({files, onChange}: FileUploaderProps) => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  const {getRootProps, getInputProps, isDragActive} = useDropzone({onDrop})
+  const {getRootProps, getInputProps } = useDropzone({onDrop})
 
   return (
     <div {...getRootProps()} className='file-upload'>
