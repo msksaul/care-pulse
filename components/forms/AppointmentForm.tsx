@@ -82,7 +82,6 @@ const AppointmentForm = ({ userId, patientId, type}: {
           router.push(`/patients/${userId}/new-appointment/success?appointmentId=${appointment.$id}`)
         }
       }
-      //http://localhost:3000/patients/6691a7a20033f381de06/new-appointment/success?appointmentId=6691ca78003106ca1aab
 
     } catch (error) {
       console.log(error)
