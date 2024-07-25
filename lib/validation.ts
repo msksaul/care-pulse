@@ -100,7 +100,7 @@ export const CancelAppointmentSchema = z.object({
   cancellationReason: z
     .string()
     .min(2, "Reason must be at least 2 characters")
-    .max(500, "Reason must be at most 500 characters"),
+    .max(500, "Reason must be at most 500 characters")
 });
 
 export function getAppointmentSchema(type: string) {
